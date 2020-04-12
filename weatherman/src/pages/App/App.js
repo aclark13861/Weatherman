@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Route } from 'react-router-dom';
+import { Route, Switch, Link } from 'react-router-dom';
 import Page1 from '../Page1/page1';
 
 function App() {
@@ -9,9 +9,11 @@ function App() {
     <div className="App">
       <header className="App-header">
       <nav>
+        <Switch>
           <Route path='/' render={(props) => (
             <Page1 {...props}/>
           )} />
+        </Switch>
         </nav>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
