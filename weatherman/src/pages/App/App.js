@@ -33,13 +33,13 @@ render() {
     <div className="App">
       <header className="App-header">
       <nav>
-        <Switch>
           <Route path='/' render={(props) => (
             <NavBar 
             handleLogout={this.handleLogout}
             user={this.state.user}
             />
           )} />
+          <Switch>
           <Route exact path='/signup' render={({ history }) => 
             <SignupPage
               history={history}
@@ -52,7 +52,7 @@ render() {
               handleSignupOrLogin={this.handleSignupOrLogin}
             />
           }/>
-          </Switch>
+        </Switch>
         </nav>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
