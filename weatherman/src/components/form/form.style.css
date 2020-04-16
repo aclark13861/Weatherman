@@ -1,0 +1,15 @@
+form {
+    margin-top: 3rem;
+}
+
+.btn {
+    /* margin-left: 28vw; */
+}
+
+form input[name="city"],
+form input[name='country']{
+    background-color: transparent;
+    color: white;
+    min-width: 20vw;
+    /* margin-left: 28vw; */
+}
